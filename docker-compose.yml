@@ -1,0 +1,49 @@
+version : "3.0"
+services:
+  app:
+    restart: always
+    build:
+      context: ./dashboard
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:1313:1313
+    command: sh -c "npm run start"
+    working_dir: /app
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: todos
+    depends_on:
+      - api_server
+    networks:
+      - hexathon-network
+  api_server:
+    restart: always
+    build:
+      context: ./api_server
+      dockerfile: Dockerfile
+    ports:
+      - 127.0.0.1:8081:80
+    working_dir: /app
+    command: "uvicorn src.main:app --host 0.0.0.0 --port 80"
+    depends_on:
+      - mongodb
+    networks:
+      - hexathon-network
+  mongodb:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - hexathon-network
+networks:
+  hexathon-network:
+    driver: bridge
