@@ -1,0 +1,36 @@
+{
+    "--SELECT--": [],
+    "Desktop": [
+        "HP",
+        "DELL",
+        "SAMSUNG",
+        "APPLE",
+        "LENOVO"
+    ],
+    "Laptop": [],
+    "Cable": [],
+    "Battery": [],
+    "Mobile": {
+        "--SELECT--": {},
+        "APPLE": {
+            "savings_1": "1",
+            "savings_2": "2"
+        },
+        "SAMSUNG": {
+            "savings_1": "3",
+            "savings_2": "4"
+        },
+        "OPPO": {
+            "savings_1": "5",
+            "savings_2": "6"
+        },
+        "VIVO": {
+            "savings_1": "7",
+            "savings_2": "8"
+        },
+        "XAIOMI": {
+            "savings_1": "9",
+            "savings_2": "10"
+        }
+    }
+}

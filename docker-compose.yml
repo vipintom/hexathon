@@ -6,7 +6,7 @@ services:
       context: ./dashboard
       dockerfile: Dockerfile
     ports:
-      - 127.0.0.1:1313:1313
+      - 127.0.0.1:3000:3000
     command: sh -c "npm run start"
     working_dir: /app
     environment:
@@ -32,7 +32,10 @@ services:
     networks:
       - hexathon-network
   mongodb:
-    image: mariadb
+    restart: always
+    build:
+      context: ./db
+      dockerfile: Dockerfile
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: mydatabase

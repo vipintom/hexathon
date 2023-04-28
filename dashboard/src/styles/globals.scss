@@ -11,3 +11,7 @@ $enable-negative-margins: true;
 @import "~nprogress/nprogress.css";
 
 @import "_custom";
+
+.modal {
+    margin-top: 200px;
+}
