@@ -1,5 +1,3 @@
-import type { NextPage } from 'next'
-import Image from 'next/image'
 import { AdminLayout } from '@layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -45,14 +43,15 @@ const random = (min: number, max: number) => Math.floor(Math.random() * (max - m
 function Home()
 {
   const [history, setHistory ]  = useState<string[]>([])
-  useEffect(() => {
+  useEffect(() => 
+  {
     function getHistory() {
       axios.post('http://127.0.0.1:80/get_savings', {})
           .then((response: AxiosResponse) => {
               setHistory(response.data)
           })
           .catch((error: any) => {
-              alert(error);
+              console.log(error);
           });
     }
     getHistory();
@@ -66,14 +65,14 @@ return(
           <Card.Body className="pb-0 d-flex justify-content-between align-items-start">
             <div>
               <div className="fs-4 fw-semibold">
-                26K
+                -26 MtCo2E
                 <span className="fs-6 ms-2 fw-normal">
                   (-12.4%
                   <FontAwesomeIcon icon={faArrowDown} fixedWidth />
                   )
                 </span>
               </div>
-              <div>Users</div>
+              <div>GHG Impact</div>
             </div>
             <Dropdown align="end">
               <Dropdown.Toggle
@@ -154,14 +153,14 @@ return(
           <Card.Body className="pb-0 d-flex justify-content-between align-items-start">
             <div>
               <div className="fs-4 fw-semibold">
-                $6.200
+                -42.2 MtCO2E
                 <span className="fs-6 ms-2 fw-normal">
                   (40.9%
                   <FontAwesomeIcon icon={faArrowUp} fixedWidth />
                   )
                 </span>
               </div>
-              <div>Income</div>
+              <div>Recycled Impact</div>
             </div>
             <Dropdown align="end">
               <Dropdown.Toggle
@@ -241,14 +240,14 @@ return(
           <Card.Body className="pb-0 d-flex justify-content-between align-items-start">
             <div>
               <div className="fs-4 fw-semibold">
-                2.49%
+                +8.9 MtCO2E
                 <span className="fs-6 ms-2 fw-normal">
                   (84.7%
                   <FontAwesomeIcon icon={faArrowUp} fixedWidth />
                   )
                 </span>
               </div>
-              <div>Conversion Rate</div>
+              <div>Landfill Impact</div>
             </div>
             <Dropdown align="end">
               <Dropdown.Toggle
@@ -316,14 +315,14 @@ return(
           <Card.Body className="pb-0 d-flex justify-content-between align-items-start">
             <div>
               <div className="fs-4 fw-semibold">
-                44K
+                +8.2 MtCO2E
                 <span className="fs-6 ms-2 fw-normal">
                   (-23.6%
                   <FontAwesomeIcon icon={faArrowDown} fixedWidth />
                   )
                 </span>
               </div>
-              <div>Sessions</div>
+              <div>Combustion Impact</div>
             </div>
             <Dropdown align="end">
               <Dropdown.Toggle
@@ -405,7 +404,7 @@ return(
                 name="options"
                 autoComplete="off"
               />
-              <label className="btn btn-outline-secondary" htmlFor="option1">Day</label>
+              <label className="btn btn-outline-secondary" htmlFor="option1">Week</label>
               <input
                 className="btn-check"
                 id="option2"
@@ -429,9 +428,6 @@ return(
               />
               <label className="btn btn-outline-secondary" htmlFor="option3">Year</label>
             </ButtonGroup>
-            <Button variant="primary">
-              <FontAwesomeIcon icon={faDownload} fixedWidth />
-            </Button>
           </div>
         </div>
         <div

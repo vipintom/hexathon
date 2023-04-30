@@ -3,7 +3,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Label, I
 import device_data from '@components/data/device_data.json'
 import dynamic from "next/dynamic";
 import axios, { AxiosResponse } from 'axios';
-import { json } from 'stream/consumers';
+import ToolTip from './Tooltip';
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
     ssr: false,
 });
@@ -46,10 +46,10 @@ function Example() {
     
         axios.post('http://127.0.0.1:80/submit_savings', postData)
             .then((response: AxiosResponse) => {
-                alert(response.data);
+                console.log(response.data);
             })
             .catch((error: any) => {
-                alert(error);
+                console.log(error);
             });
     
         toggle()
@@ -116,9 +116,19 @@ function Example() {
                 value={opt}
             />
             {' '}
-            <Label check>
+            <div className='row'>
+                <div className='col'>
+                <Label check>
                 {opt}
             </Label>
+                </div>
+                <div className='col'>
+                <Label check>
+                <ToolTip msg={dv[device_type]["value"][device]["value"][opt]["description"]} opt = {opt}/>
+            </Label>
+                </div>
+            </div>
+            
         </FormGroup>);
     }
 
@@ -236,6 +246,17 @@ function Example() {
                                 </Form>
                             </div>
                             <div className="col" >
+                                <div className='row' style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center"
+                                }}>GHG Impact (KgCO2E)</div>
+                                <div className='row' style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    height: "100%",
+                                    justifyContent: "center"
+                                }}>
                                 <div className="container" style={{
                                     display: "flex",
                                     alignItems: "center",
@@ -243,6 +264,7 @@ function Example() {
                                     justifyContent: "center"
                                 }}>
                                     <AnimatedCounter />
+                                </div>
                                 </div>
                             </div>
                         </div>
