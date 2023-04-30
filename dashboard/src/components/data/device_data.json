@@ -1,36 +1,372 @@
 {
-    "--SELECT--": [],
-    "Desktop": [
-        "HP",
-        "DELL",
-        "SAMSUNG",
-        "APPLE",
-        "LENOVO"
-    ],
-    "Laptop": [],
-    "Cable": [],
-    "Battery": [],
+    "Desktop": {
+        "id": 1,
+        "value": {
+            "HP": {
+                "id": 1,
+                "value": {
+                    "Recycled": {
+                        "id": 1,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -1.49
+                    },
+                    "Landified": {
+                        "id": 2,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 3,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": -0.66
+                    }
+                }
+            },
+            "DELL": {
+                "id": 2,
+                "value": {
+                    "Recycled": {
+                        "id": 4,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -1.49
+                    },
+                    "Landified": {
+                        "id": 5,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 6,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": -0.66
+                    }
+                }
+            },
+            "LENOVO": {
+                "id": 3,
+                "value": {
+                    "Combusted": {
+                        "id": 7,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": -0.66
+                    },
+                    "Recycled": {
+                        "id": 8,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -1.49
+                    },
+                    "Landified": {
+                        "id": 9,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    }
+                }
+            },
+            "ACER": {
+                "id": 4,
+                "value": {
+                    "Recycled": {
+                        "id": 10,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -1.49
+                    },
+                    "Landified": {
+                        "id": 11,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 12,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": -0.66
+                    }
+                }
+            }
+        }
+    },
+    "Laptop": {
+        "id": 2,
+        "value": {
+            "DELL": {
+                "id": 6,
+                "value": {
+                    "Recycled": {
+                        "id": 13,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -1.06
+                    },
+                    "Landified": {
+                        "id": 14,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 15,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.66
+                    }
+                }
+            },
+            "HP": {
+                "id": 7,
+                "value": {
+                    "Recycled": {
+                        "id": 16,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -1.06
+                    },
+                    "Landified": {
+                        "id": 17,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 18,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.66
+                    }
+                }
+            },
+            "SAMSUNG": {
+                "id": 8,
+                "value": {
+                    "Combusted": {
+                        "id": 19,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.66
+                    },
+                    "Recycled": {
+                        "id": 20,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -1.06
+                    },
+                    "Landified": {
+                        "id": 21,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    }
+                }
+            }
+        }
+    },
     "Mobile": {
-        "--SELECT--": {},
-        "APPLE": {
-            "savings_1": "1",
-            "savings_2": "2"
-        },
-        "SAMSUNG": {
-            "savings_1": "3",
-            "savings_2": "4"
-        },
-        "OPPO": {
-            "savings_1": "5",
-            "savings_2": "6"
-        },
-        "VIVO": {
-            "savings_1": "7",
-            "savings_2": "8"
-        },
-        "XAIOMI": {
-            "savings_1": "9",
-            "savings_2": "10"
+        "id": 3,
+        "value": {
+            "SAMSUNG": {
+                "id": 10,
+                "value": {
+                    "Recycled": {
+                        "id": 22,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -1.06
+                    },
+                    "Landified": {
+                        "id": 23,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 24,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.66
+                    }
+                }
+            },
+            "OPPO": {
+                "id": 11,
+                "value": {
+                    "Recycled": {
+                        "id": 25,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -0.49
+                    },
+                    "Landified": {
+                        "id": 26,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 27,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.36
+                    }
+                }
+            },
+            "MOTOROLA": {
+                "id": 12,
+                "value": {
+                    "Recycled": {
+                        "id": 28,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -0.49
+                    },
+                    "Landified": {
+                        "id": 29,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 30,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.36
+                    }
+                }
+            }
+        }
+    },
+    "Monitor/TV": {
+        "id": 4,
+        "value": {
+            "SAMSUNG": {
+                "id": 13,
+                "value": {
+                    "Combusted": {
+                        "id": 31,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.36
+                    },
+                    "Recycled": {
+                        "id": 32,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -0.49
+                    },
+                    "Landified": {
+                        "id": 33,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    }
+                }
+            },
+            "DELL": {
+                "id": 14,
+                "value": {
+                    "Recycled": {
+                        "id": 34,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -0.49
+                    },
+                    "Landified": {
+                        "id": 35,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 36,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.36
+                    }
+                }
+            },
+            "ASUS": {
+                "id": 16,
+                "value": {
+                    "Recycled": {
+                        "id": 37,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -0.99
+                    },
+                    "Landified": {
+                        "id": 38,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 39,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.03
+                    }
+                }
+            }
+        }
+    },
+    "Mixed Electronics": {
+        "id": 5,
+        "value": {
+            "BATTERIES": {
+                "id": 17,
+                "value": {
+                    "Recycled": {
+                        "id": 40,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -0.99
+                    },
+                    "Landified": {
+                        "id": 41,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    },
+                    "Combusted": {
+                        "id": 42,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.03
+                    }
+                }
+            },
+            "USB CABLES": {
+                "id": 18,
+                "value": {
+                    "Combusted": {
+                        "id": 43,
+                        "technique_id": 3,
+                        "description": "Combustion is a waste reduction technique that involves burning waste materials in specially designed incinerators. The process involves heating the waste to high temperatures in the presence of oxygen, which breaks it down into ash and gases that can be processed further or used to generate energy. While combustion can reduce the volume of waste and produce energy, it also presents environmental and health concerns such as the emission of greenhouse gases and air pollutants. Modern incinerators are equipped with advanced pollution control technologies to mitigate these concerns. Therefore, while combustion can be an effective waste reduction technique, its use should be carefully considered and monitored to minimize negative environmental impacts.",
+                        "ghg_savings": 0.03
+                    },
+                    "Recycled": {
+                        "id": 44,
+                        "technique_id": 1,
+                        "description": "The term recycled generally refers to a process of converting waste materials into new products or raw materials, instead of simply disposing of them. Recycling helps to reduce the amount of waste in landfills, conserve natural resources, and reduce the environmental impact of production and consumption.",
+                        "ghg_savings": -0.99
+                    },
+                    "Landified": {
+                        "id": 45,
+                        "technique_id": 2,
+                        "description": "waste management method that involves burying solid waste in the ground. The process begins with the construction of a pit or trench that is lined with a barrier layer to prevent contamination of the surrounding soil and groundwater. The waste is then deposited in the pit and compacted to reduce its volume. Additional layers of soil or materials are added and compacted until the landfill is full, at which point a final cover is placed over the top. The landfill site is then monitored for many years to prevent contamination and manage any gases or liquids produced by the waste. Despite being effective, landfilling presents environmental and health concerns such as pollution and odors.",
+                        "ghg_savings": 0.02
+                    }
+                }
+            }
         }
     }
 }

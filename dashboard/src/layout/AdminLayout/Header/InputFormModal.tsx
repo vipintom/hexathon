@@ -2,12 +2,21 @@ import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Label, Input, Form, Col } from 'reactstrap';
 import device_data from '@components/data/device_data.json'
 import dynamic from "next/dynamic";
+import axios, { AxiosResponse } from 'axios';
+import { json } from 'stream/consumers';
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
     ssr: false,
 });
 
-function Example() {
+interface PostData {
+    technique_id: number;
+    quantity: number;
+    ghg_savings: number;
+    created_by: string;
+}
 
+
+function Example() {
     const [modal, setModal] = useState(false);
     const [devices, setDevices] = useState<string[]>([])
     const [options, setOptions] = useState<string[]>([])
@@ -16,12 +25,36 @@ function Example() {
     const [device_type, setDType] = useState("")
     const [device, setDevice] = useState("")
     const [method_savings, setSavings] = useState(0)
+    const [technique_id, setTechnique] = useState(0)
 
 
     const [count, setCount] = useState(0)
     const [count_state, setCountState] = useState(true)
 
     var dv = JSON.parse(JSON.stringify(device_data))
+
+
+    
+
+    function submit() {
+        const postData: PostData = {
+            technique_id: technique_id,
+            quantity : count,
+            ghg_savings : num,
+            created_by : 'Vipin'
+        };
+    
+        axios.post('http://127.0.0.1:80/submit_savings', postData)
+            .then((response: AxiosResponse) => {
+                alert(response.data);
+            })
+            .catch((error: any) => {
+                alert(error);
+            });
+    
+        toggle()
+    }
+
     function toggle() {
         setModal(!modal);
         setDevices([]);
@@ -33,8 +66,7 @@ function Example() {
 
     function typeSelect(event: { target: { value: string; }; }) {
         setDType(event.target.value);
-        setDevices(Object.keys(dv[event.target.value]));
-
+        setDevices(Object.keys(dv[event.target.value]["value"]));
         setOptions([])
         setCount(0)
         setCountState(true)
@@ -44,7 +76,7 @@ function Example() {
 
     function deviceSelect(event: { target: { value: string; }; }) {
         setDevice(event.target.value);
-        setOptions(Object.keys(dv[device_type][event.target.value]))
+        setOptions(Object.keys(dv[device_type]["value"][event.target.value]["value"]))
         setCountState(false)
         setCount(0)
         calcSavings(0, 0)
@@ -57,12 +89,15 @@ function Example() {
     }
 
     function calcSavings(count: number, method_savings: number) {
-        setNum(count * 10 * method_savings)
+        setNum(count * method_savings)
     }
 
-    function methodSelect(event: { target: { value: number; }; }) {
-        setSavings(event.target.value)
-        calcSavings(count, event.target.value)
+    function methodSelect(event: { target: { value: string; }; }) {
+        var savings = dv[device_type]["value"][device]["value"][event.target.value]["ghg_savings"]
+        var technique_id = dv[device_type]["value"][device]["value"][event.target.value]["id"]
+        setSavings(savings)
+        calcSavings(count, savings)
+        setTechnique(technique_id)
     }
 
     function unCheck() {
@@ -73,17 +108,16 @@ function Example() {
         }
     }
     function getOptions(opt: string) {
-        var savings = dv[device_type][device][opt]
         return (<FormGroup check>
             <Input
                 name="radio2"
                 type="radio"
                 onChange={methodSelect}
-                value={savings}
+                value={opt}
             />
             {' '}
             <Label check>
-                {opt + "( " + savings + "%)"}
+                {opt}
             </Label>
         </FormGroup>);
     }
@@ -216,8 +250,8 @@ function Example() {
 
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="primary" onClick={toggle}>
-                        Do Something
+                    <Button color="primary" onClick={submit}>
+                        Add
                     </Button>{' '}
                     <Button color="secondary" onClick={toggle}>
                         Cancel

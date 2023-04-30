@@ -4,4 +4,5 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY . /app
 EXPOSE 80
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+RUN apk add mariadb-dev gcc musl-dev 
+RUN pip install --upgrade -r requirements.txt

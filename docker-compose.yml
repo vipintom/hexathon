@@ -18,13 +18,14 @@ services:
       - api_server
     networks:
       - hexathon-network
+
   api_server:
     restart: always
     build:
       context: ./api_server
       dockerfile: Dockerfile
     ports:
-      - 127.0.0.1:8081:80
+      - 80:80
     working_dir: /app
     command: "uvicorn src.main:app --host 0.0.0.0 --port 80"
     depends_on:
